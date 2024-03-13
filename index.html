@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Galvão - Calculadora</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bodytheme1">
+    <div class="conteudoGeral">
+        <div class="seletorTemastheme1" id="seletorTemas">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+        </div>
+        <div class="headerCalculadoratheme1" id="headerCalculadora">
+            <h2>Calculadora</h2>
+            <div class="selectTheme">
+                <h3>Tema</h3>
+                <div class="inputs">
+                    <input type="radio" name="theme" value="theme1" checked>
+                    <input type="radio" name="theme" value="theme2">
+                    <input type="radio" name="theme" value="theme3">
+                </div>
+            </div>
+        </div>
+        <div class="resultCalculadoratheme1" id="resultaCalculadora">
+            <p class="OpNumero1" style="display: none;">0</p>
+            <h2 class="visorCalculadoratheme1" id="visorCalculadora">0</h2>
+        </div>
+        <div class="itensCalculadoratheme1" id="itensCalculadora">
+            <h1 onclick="clickNumero7()" class="n7">7</h1>
+            <h1 onclick="clickNumero8()" class="n8">8</h1>
+            <h1 onclick="clickNumero9()" class="n9">9</h1>
+            <h1 class="deltheme1" id="btnDel" onclick="del()">DEL</h1>
+
+            <h1 onclick="clickNumero4()" class="n4">4</h1>
+            <h1 onclick="clickNumero5()" class="n5">5</h1>
+            <h1 onclick="clickNumero6()" class="n6">6</h1>
+            <h1 onclick="clickSoma()" class="sinalSoma">+</h1>
+
+            <h1 onclick="clickNumero1()" class="n1">1</h1>
+            <h1 onclick="clickNumero2()" class="n2">2</h1>
+            <h1 onclick="clickNumero3()" class="n3">3</h1>
+            <h1 onclick="clickSubtracao()" class="sinalSubtracao">-</h1>
+
+            <h1 onclick="clickPonto()" class="sinalPonto">.</h1>
+            <h1 onclick="clickNumero0()" class="n0">0</h1>
+            <h1 onclick="clickDivisao()" class="sinalDivisao">/</h1>
+            <h1 onclick="clickMultiplicacao()" class="sinalMultiplicacao">x</h1>
+
+            <h1 class="btnresettheme1" id="btnreset" onclick="reset()">Reset</h1>
+            <h1 class="btnigualtheme1" id="btnigual" onclick="clickResult()">=</h1>
+        </div>
+    </div>
+</body>
+
+</html>
